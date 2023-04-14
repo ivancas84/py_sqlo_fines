@@ -1,0 +1,146 @@
+{
+  "id": {
+    "type": "varchar",
+    "field_type": "pk",
+    "default": null,
+    "alias": "id",
+    "entity_name": "calificacion",
+    "data_type": "string",  
+    "length": 45,
+    "name": "id"
+  },
+
+  "nota1": {
+    "type": "decimal",
+    "field_type": "nf",
+    "default": null,
+    "alias": "noa",
+    "entity_name": "calificacion",
+    "data_type": "float",  
+    "length": 4.2,
+    "name": "nota1"
+  },
+
+  "nota2": {
+    "type": "decimal",
+    "field_type": "nf",
+    "default": null,
+    "alias": "nob",
+    "entity_name": "calificacion",
+    "data_type": "float",  
+    "length": 4.2,
+    "name": "nota2"
+  },
+
+  "nota3": {
+    "type": "decimal",
+    "field_type": "nf",
+    "default": null,
+    "alias": "noc",
+    "entity_name": "calificacion",
+    "data_type": "float",  
+    "length": 4.2,
+    "name": "nota3"
+  },
+
+  "nota_final": {
+    "type": "decimal",
+    "field_type": "nf",
+    "default": null,
+    "alias": "nf",
+    "entity_name": "calificacion",
+    "data_type": "float",  
+    "length": 4.2,
+    "name": "nota_final"
+  },
+
+  "crec": {
+    "type": "decimal",
+    "field_type": "nf",
+    "default": null,
+    "alias": "cre",
+    "entity_name": "calificacion",
+    "data_type": "float",  
+    "length": 4.2,
+    "name": "crec"
+  },
+
+  "curso": {
+    "type": "varchar",
+    "field_type": "mo",
+    "default": null,
+    "alias": "cur",
+    "entity_name": "calificacion",
+    "entity_ref_name": "curso",  
+    "data_type": "string",  
+    "length": 45,
+    "name": "curso"
+  },
+
+  "porcentaje_asistencia": {
+    "type": "int",
+    "field_type": "nf",
+    "default": null,
+    "alias": "pa",
+    "entity_name": "calificacion",
+    "data_type": "integer",  
+    "length": 3,
+    "name": "porcentaje_asistencia"
+  },
+
+  "observaciones": {
+    "type": "text",
+    "field_type": "nf",
+    "default": null,
+    "alias": "obs",
+    "entity_name": "calificacion",
+    "data_type": "text",  
+    "length": 65535,
+    "name": "observaciones"
+  },
+
+  "division": {
+    "type": "varchar",
+    "field_type": "nf",
+    "default": null,
+    "alias": "dia",
+    "entity_name": "calificacion",
+    "data_type": "string",  
+    "length": 255,
+    "name": "division"
+  },
+
+  "alumno": {
+    "type": "varchar",
+    "field_type": "mo",
+    "default": null,
+    "alias": "alu",
+    "entity_name": "calificacion",
+    "entity_ref_name": "alumno",  
+    "data_type": "string",  
+    "length": 45,
+    "name": "alumno"
+  },
+
+  "disposicion": {
+    "type": "varchar",
+    "field_type": "mo",
+    "default": null,
+    "alias": "dis",
+    "entity_name": "calificacion",
+    "entity_ref_name": "disposicion",  
+    "data_type": "string",  
+    "length": 45,
+    "name": "disposicion"
+  },
+
+  "fecha": {
+    "type": "date",
+    "field_type": "nf",
+    "default": null,
+    "alias": "fec",
+    "entity_name": "calificacion",
+    "data_type": "date",  
+    "name": "fecha"
+  }
+}

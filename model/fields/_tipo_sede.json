@@ -1,0 +1,23 @@
+{
+  "id": {
+    "type": "varchar",
+    "field_type": "pk",
+    "default": null,
+    "alias": "id",
+    "entity_name": "tipo_sede",
+    "data_type": "string",  
+    "length": 45,
+    "name": "id"
+  },
+
+  "descripcion": {
+    "type": "varchar",
+    "field_type": "nf",
+    "default": null,
+    "alias": "des",
+    "entity_name": "tipo_sede",
+    "data_type": "string",  
+    "length": 255,
+    "name": "descripcion"
+  }
+}

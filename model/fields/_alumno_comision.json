@@ -1,0 +1,79 @@
+{
+  "id": {
+    "type": "varchar",
+    "field_type": "pk",
+    "default": null,
+    "alias": "id",
+    "entity_name": "alumno_comision",
+    "data_type": "string",  
+    "length": 45,
+    "name": "id"
+  },
+
+  "creado": {
+    "type": "timestamp",
+    "field_type": "nf",
+    "default": "current_timestamp()",
+    "alias": "cre",
+    "entity_name": "alumno_comision",
+    "data_type": "timestamp",  
+    "name": "creado"
+  },
+
+  "activo": {
+    "type": "tinyint",
+    "field_type": "nf",
+    "default": "0",
+    "alias": "act",
+    "entity_name": "alumno_comision",
+    "data_type": "boolean",  
+    "length": 1,
+    "name": "activo"
+  },
+
+  "observaciones": {
+    "type": "text",
+    "field_type": "nf",
+    "default": null,
+    "alias": "obs",
+    "entity_name": "alumno_comision",
+    "data_type": "text",  
+    "length": 65535,
+    "name": "observaciones"
+  },
+
+  "comision": {
+    "type": "varchar",
+    "field_type": "mo",
+    "default": null,
+    "alias": "com",
+    "entity_name": "alumno_comision",
+    "entity_ref_name": "comision",  
+    "data_type": "string",  
+    "length": 45,
+    "name": "comision"
+  },
+
+  "alumno": {
+    "type": "varchar",
+    "field_type": "mo",
+    "default": null,
+    "alias": "alu",
+    "entity_name": "alumno_comision",
+    "entity_ref_name": "alumno",  
+    "data_type": "string",  
+    "length": 45,
+    "name": "alumno"
+  },
+
+  "estado": {
+    "type": "varchar",
+    "field_type": "nf",
+    "default": "Activo",
+    "alias": "est",
+    "entity_name": "alumno_comision",
+    "data_type": "string",  
+    "length": 100,
+    "name": "estado"
+  }
+}

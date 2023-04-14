@@ -1,0 +1,89 @@
+{
+  "id": {
+    "type": "varchar",
+    "field_type": "pk",
+    "default": null,
+    "alias": "id",
+    "entity_name": "domicilio",
+    "data_type": "string",  
+    "length": 45,
+    "name": "id"
+  },
+
+  "calle": {
+    "type": "varchar",
+    "field_type": "nf",
+    "default": null,
+    "alias": "cal",
+    "entity_name": "domicilio",
+    "data_type": "string",  
+    "length": 45,
+    "name": "calle"
+  },
+
+  "entre": {
+    "type": "varchar",
+    "field_type": "nf",
+    "default": null,
+    "alias": "ent",
+    "entity_name": "domicilio",
+    "data_type": "string",  
+    "length": 45,
+    "name": "entre"
+  },
+
+  "numero": {
+    "type": "varchar",
+    "field_type": "nf",
+    "default": null,
+    "alias": "num",
+    "entity_name": "domicilio",
+    "data_type": "string",  
+    "length": 45,
+    "name": "numero"
+  },
+
+  "piso": {
+    "type": "varchar",
+    "field_type": "nf",
+    "default": null,
+    "alias": "pis",
+    "entity_name": "domicilio",
+    "data_type": "string",  
+    "length": 45,
+    "name": "piso"
+  },
+
+  "departamento": {
+    "type": "varchar",
+    "field_type": "nf",
+    "default": null,
+    "alias": "dep",
+    "entity_name": "domicilio",
+    "data_type": "string",  
+    "length": 45,
+    "name": "departamento"
+  },
+
+  "barrio": {
+    "type": "varchar",
+    "field_type": "nf",
+    "default": null,
+    "alias": "bar",
+    "entity_name": "domicilio",
+    "data_type": "string",  
+    "length": 255,
+    "name": "barrio"
+  },
+
+  "localidad": {
+    "type": "varchar",
+    "field_type": "nf",
+    "default": null,
+    "alias": "loc",
+    "entity_name": "domicilio",
+    "data_type": "string",  
+    "length": 255,
+    "name": "localidad"
+  }
+}

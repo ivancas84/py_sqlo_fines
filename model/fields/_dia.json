@@ -1,0 +1,34 @@
+{
+  "id": {
+    "type": "varchar",
+    "field_type": "pk",
+    "default": null,
+    "alias": "id",
+    "entity_name": "dia",
+    "data_type": "string",  
+    "length": 45,
+    "name": "id"
+  },
+
+  "numero": {
+    "type": "smallint",
+    "field_type": "nf",
+    "default": null,
+    "alias": "num",
+    "entity_name": "dia",
+    "data_type": "integer",  
+    "length": 1,
+    "name": "numero"
+  },
+
+  "dia": {
+    "type": "varchar",
+    "field_type": "nf",
+    "default": null,
+    "alias": "dib",
+    "entity_name": "dia",
+    "data_type": "string",  
+    "length": 9,
+    "name": "dia"
+  }
+}

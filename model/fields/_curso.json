@@ -1,0 +1,68 @@
+{
+  "id": {
+    "type": "varchar",
+    "field_type": "pk",
+    "default": null,
+    "alias": "id",
+    "entity_name": "curso",
+    "data_type": "string",  
+    "length": 45,
+    "name": "id"
+  },
+
+  "horas_catedra": {
+    "type": "int",
+    "field_type": "nf",
+    "default": null,
+    "alias": "hc",
+    "entity_name": "curso",
+    "data_type": "integer",  
+    "length": 10,
+    "name": "horas_catedra"
+  },
+
+  "ige": {
+    "type": "varchar",
+    "field_type": "nf",
+    "default": null,
+    "alias": "ige",
+    "entity_name": "curso",
+    "data_type": "string",  
+    "length": 45,
+    "name": "ige"
+  },
+
+  "comision": {
+    "type": "varchar",
+    "field_type": "mo",
+    "default": null,
+    "alias": "com",
+    "entity_name": "curso",
+    "entity_ref_name": "comision",  
+    "data_type": "string",  
+    "length": 45,
+    "name": "comision"
+  },
+
+  "asignatura": {
+    "type": "varchar",
+    "field_type": "mo",
+    "default": null,
+    "alias": "asi",
+    "entity_name": "curso",
+    "entity_ref_name": "asignatura",  
+    "data_type": "string",  
+    "length": 45,
+    "name": "asignatura"
+  },
+
+  "alta": {
+    "type": "timestamp",
+    "field_type": "nf",
+    "default": "current_timestamp()",
+    "alias": "alt",
+    "entity_name": "curso",
+    "data_type": "timestamp",  
+    "name": "alta"
+  }
+}

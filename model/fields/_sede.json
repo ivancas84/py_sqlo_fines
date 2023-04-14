@@ -1,0 +1,123 @@
+{
+  "id": {
+    "type": "varchar",
+    "field_type": "pk",
+    "default": null,
+    "alias": "id",
+    "entity_name": "sede",
+    "data_type": "string",  
+    "length": 45,
+    "name": "id"
+  },
+
+  "numero": {
+    "type": "varchar",
+    "field_type": "nf",
+    "default": null,
+    "alias": "num",
+    "entity_name": "sede",
+    "data_type": "string",  
+    "length": 45,
+    "name": "numero"
+  },
+
+  "nombre": {
+    "type": "varchar",
+    "field_type": "nf",
+    "default": null,
+    "alias": "nom",
+    "entity_name": "sede",
+    "data_type": "string",  
+    "length": 255,
+    "name": "nombre"
+  },
+
+  "observaciones": {
+    "type": "text",
+    "field_type": "nf",
+    "default": null,
+    "alias": "obs",
+    "entity_name": "sede",
+    "data_type": "text",  
+    "length": 65535,
+    "name": "observaciones"
+  },
+
+  "alta": {
+    "type": "timestamp",
+    "field_type": "nf",
+    "default": "current_timestamp()",
+    "alias": "alt",
+    "entity_name": "sede",
+    "data_type": "timestamp",  
+    "name": "alta"
+  },
+
+  "baja": {
+    "type": "timestamp",
+    "field_type": "nf",
+    "default": null,
+    "alias": "baj",
+    "entity_name": "sede",
+    "data_type": "timestamp",  
+    "name": "baja"
+  },
+
+  "domicilio": {
+    "type": "varchar",
+    "field_type": "mo",
+    "default": null,
+    "alias": "dom",
+    "entity_name": "sede",
+    "entity_ref_name": "domicilio",  
+    "data_type": "string",  
+    "length": 45,
+    "name": "domicilio"
+  },
+
+  "tipo_sede": {
+    "type": "varchar",
+    "field_type": "mo",
+    "default": null,
+    "alias": "ts",
+    "entity_name": "sede",
+    "entity_ref_name": "tipo_sede",  
+    "data_type": "string",  
+    "length": 45,
+    "name": "tipo_sede"
+  },
+
+  "centro_educativo": {
+    "type": "varchar",
+    "field_type": "mo",
+    "default": null,
+    "alias": "ce",
+    "entity_name": "sede",
+    "entity_ref_name": "centro_educativo",  
+    "data_type": "string",  
+    "length": 45,
+    "name": "centro_educativo"
+  },
+
+  "fecha_traspaso": {
+    "type": "date",
+    "field_type": "nf",
+    "default": null,
+    "alias": "ft",
+    "entity_name": "sede",
+    "data_type": "date",  
+    "name": "fecha_traspaso"
+  },
+
+  "organizacion": {
+    "type": "varchar",
+    "field_type": "mo",
+    "default": null,
+    "alias": "org",
+    "entity_name": "sede",
+    "entity_ref_name": "sede",  
+    "data_type": "string",  
+    "length": 45,
+    "name": "organizacion"
+  }
+}

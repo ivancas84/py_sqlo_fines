@@ -1,0 +1,3 @@
+[submodule "py_sqlo"]
+	path = py_sqlo
+	url = https://github.com/sqlorganize/py_sqlo.git

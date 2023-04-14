@@ -1,0 +1,78 @@
+{
+  "id": {
+    "type": "varchar",
+    "field_type": "pk",
+    "default": null,
+    "alias": "id",
+    "entity_name": "designacion",
+    "data_type": "string",  
+    "length": 45,
+    "name": "id"
+  },
+
+  "desde": {
+    "type": "date",
+    "field_type": "nf",
+    "default": null,
+    "alias": "des",
+    "entity_name": "designacion",
+    "data_type": "date",  
+    "name": "desde"
+  },
+
+  "hasta": {
+    "type": "date",
+    "field_type": "nf",
+    "default": null,
+    "alias": "has",
+    "entity_name": "designacion",
+    "data_type": "date",  
+    "name": "hasta"
+  },
+
+  "cargo": {
+    "type": "varchar",
+    "field_type": "mo",
+    "default": null,
+    "alias": "car",
+    "entity_name": "designacion",
+    "entity_ref_name": "cargo",  
+    "data_type": "string",  
+    "length": 45,
+    "name": "cargo"
+  },
+
+  "sede": {
+    "type": "varchar",
+    "field_type": "mo",
+    "default": null,
+    "alias": "sed",
+    "entity_name": "designacion",
+    "entity_ref_name": "sede",  
+    "data_type": "string",  
+    "length": 45,
+    "name": "sede"
+  },
+
+  "persona": {
+    "type": "varchar",
+    "field_type": "mo",
+    "default": null,
+    "alias": "per",
+    "entity_name": "designacion",
+    "entity_ref_name": "persona",  
+    "data_type": "string",  
+    "length": 45,
+    "name": "persona"
+  },
+
+  "alta": {
+    "type": "timestamp",
+    "field_type": "nf",
+    "default": "current_timestamp()",
+    "alias": "alt",
+    "entity_name": "designacion",
+    "data_type": "timestamp",  
+    "name": "alta"
+  }
+}

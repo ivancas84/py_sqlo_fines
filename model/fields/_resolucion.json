@@ -1,0 +1,44 @@
+{
+  "id": {
+    "type": "varchar",
+    "field_type": "pk",
+    "default": null,
+    "alias": "id",
+    "entity_name": "resolucion",
+    "data_type": "string",  
+    "length": 45,
+    "name": "id"
+  },
+
+  "numero": {
+    "type": "varchar",
+    "field_type": "nf",
+    "default": null,
+    "alias": "num",
+    "entity_name": "resolucion",
+    "data_type": "string",  
+    "length": 255,
+    "name": "numero"
+  },
+
+  "anio": {
+    "type": "year",
+    "field_type": "nf",
+    "default": null,
+    "alias": "ani",
+    "entity_name": "resolucion",
+    "data_type": "year",  
+    "name": "anio"
+  },
+
+  "tipo": {
+    "type": "varchar",
+    "field_type": "nf",
+    "default": null,
+    "alias": "tip",
+    "entity_name": "resolucion",
+    "data_type": "string",  
+    "length": 255,
+    "name": "tipo"
+  }
+}
