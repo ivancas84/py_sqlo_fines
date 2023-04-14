@@ -1,7 +1,11 @@
+import pprint
 import sys
 sys.path.insert(0, "../")
 
-from py_sqlo.src.container_test import ContainerTest
+from py_sqlo.src.entity_query import EntityQuery
+
+from py_sqlo.src.container import Container
+
 
 config = {
     "user":"root",
@@ -11,10 +15,14 @@ config = {
     "path_model":"C:\\xampp\\htdocs\\fines2-estructura\\model\\"
 }
 
-print(ContainerTest.mapping("persona"))
-print(ContainerTest.mapping("alumno"))
+
+Container.init(config)
+q = Container.query("persona").fields().sql()
+print(q)
 
 
+# print(q)
+# print(q.__class__.container)
 # print(Container.tools("persona").field_names())
 # pprint(vars(Container.query("persona")))
 # pprint(vars(Container.field("persona","nombres")))
