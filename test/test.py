@@ -17,8 +17,9 @@ config = {
 
 
 Container.init(config)
-q = Container.query("persona").fields().sql()
-print(q)
+m = Container.mapping("persona").label()
+# q = Container.query("persona").fields().sql()
+# print(q)
 
 
 # print(q)
