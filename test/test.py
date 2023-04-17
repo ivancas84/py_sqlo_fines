@@ -2,8 +2,6 @@ import pprint
 import sys
 sys.path.insert(0, "../")
 
-from py_sqlo.src.entity_query import EntityQuery
-
 from py_sqlo.src.container import Container
 
 
@@ -17,7 +15,7 @@ config = {
 
 
 Container.init(config)
-m = Container.mapping("planificacion").map("label")
+m = Container.query("comision").fields().sql()
 print(m)
 # q = Container.query("persona").fields().sql()
 # print(q)
