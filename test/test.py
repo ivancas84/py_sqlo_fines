@@ -15,7 +15,7 @@ config = {
 
 
 Container.init(config)
-m = Container.query("comision").fields().sql()
+m = Container.mapping("curso").label()
 print(m)
 # q = Container.query("persona").fields().sql()
 # print(q)
