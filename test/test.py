@@ -1,8 +1,10 @@
 import pprint
+from pydoc import resolve
 import sys
 sys.path.insert(0, "../")
 
 from py_sqlo.src.container import Container
+from py_sqlo.src.config import APPROX, EQUAL, NONEQUAL
 
 
 config = {
@@ -15,10 +17,9 @@ config = {
 
 
 Container.init(config)
-m = Container.mapping("curso").label()
-print(m)
-# q = Container.query("persona").fields().sql()
-# print(q)
+
+q = Container.condition("persona").cond("label",APPROX,"something")
+print(q)
 
 
 # print(q)
