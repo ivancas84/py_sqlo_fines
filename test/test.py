@@ -3,7 +3,7 @@ from pydoc import resolve
 import sys
 sys.path.insert(0, "../")
 
-from py_sqlo.src.container import Container
+from py_sqlo.src.db import Db
 from py_sqlo.src.config import APPROX, EQUAL, NONEQUAL
 
 
@@ -15,11 +15,11 @@ config = {
     "path_model":"C:\\xampp\\htdocs\\fines2-estructura\\model\\"
 }
 
+db = Db(config)
 
-Container.init(config)
 
-q = Container.condition("persona").cond("label",APPROX,"something")
-print(q)
+p = db.values("curso").set("horas_catedra","something")
+print(p)
 
 
 # print(q)
