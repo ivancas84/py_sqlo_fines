@@ -3,7 +3,7 @@ from pydoc import resolve
 import sys
 sys.path.insert(0, "../")
 
-from py_sqlo.src.container import Container
+from py_sqlo.src.db import Db
 from py_sqlo.src.config import APPROX, EQUAL, NONEQUAL
 
 
@@ -15,23 +15,15 @@ config = {
     "path_model":"C:\\xampp\\htdocs\\fines2-estructura\\model\\"
 }
 
-
-Container.init(config)
-
-q = Container.condition("persona").cond("label",APPROX,"something")
+db = Db(config)
+q = db.query("persona").cond(["nombres",APPROX,"Ivan"]).sql()
 print(q)
+# mycursor = db.conn().cursor()
+
+# sql = "SELECT * FROM persona WHERE nombres LIKE %s"
+
+# mycursor.execute(sql, ("%"+"Juan"+"%", ))
+
+# print(mycursor.statement)
 
 
-# print(q)
-# print(q.__class__.container)
-# print(Container.tools("persona").field_names())
-# pprint(vars(Container.query("persona")))
-# pprint(vars(Container.field("persona","nombres")))
-# json_formatted_str = json.dumps(Container.entities(), indent=2)
-
-# print(json_formatted_str)
-
-# try:
-#     Container.db_connect()
-# finally:
-#     Container.db_close()
