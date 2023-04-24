@@ -16,8 +16,7 @@ config = {
 }
 
 db = Db(config)
-<<<<<<< HEAD
-q = db.query("persona").cond(["nombres",APPROX,"Ivan"]).sql()
+q = db.query("persona").cond(("nombres",APPROX,"Ivan")).sql()
 print(q)
 # mycursor = db.conn().cursor()
 
@@ -26,11 +25,5 @@ print(q)
 # mycursor.execute(sql, ("%"+"Juan"+"%", ))
 
 # print(mycursor.statement)
-=======
-
-
-p = db.values("curso").set("horas_catedra","something")
-print(p)
->>>>>>> a1528186c78d6a3b3c11f3208718a3a1a7dc32a6
 
 
