@@ -1,178 +1,162 @@
 {
   "id": {
-    "type": "varchar",
     "field_type": "pk",
     "default": null,
     "alias": "id",
     "entity_name": "toma",
-    "data_type": "string",  
+    "type": "str",  
     "length": 45,
     "name": "id"
   },
 
   "fecha_toma": {
-    "type": "date",
     "field_type": "nf",
     "default": null,
     "alias": "ft",
     "entity_name": "toma",
-    "data_type": "date",  
+    "type": "date",  
     "name": "fecha_toma"
   },
 
   "estado": {
-    "type": "varchar",
     "field_type": "nf",
     "default": null,
     "alias": "est",
     "entity_name": "toma",
-    "data_type": "string",  
+    "type": "str",  
     "length": 45,
     "name": "estado"
   },
 
   "observaciones": {
-    "type": "text",
     "field_type": "nf",
     "default": null,
     "alias": "obs",
     "entity_name": "toma",
-    "data_type": "text",  
+    "type": "str",  
     "length": 65535,
     "name": "observaciones"
   },
 
   "comentario": {
-    "type": "varchar",
     "field_type": "nf",
     "default": null,
     "alias": "com",
     "entity_name": "toma",
-    "data_type": "string",  
+    "type": "str",  
     "length": 45,
     "name": "comentario"
   },
 
   "tipo_movimiento": {
-    "type": "varchar",
     "field_type": "nf",
     "default": null,
     "alias": "tm",
     "entity_name": "toma",
-    "data_type": "string",  
+    "type": "str",  
     "length": 45,
     "name": "tipo_movimiento"
   },
 
   "estado_contralor": {
-    "type": "varchar",
     "field_type": "nf",
     "default": null,
     "alias": "ec",
     "entity_name": "toma",
-    "data_type": "string",  
+    "type": "str",  
     "length": 45,
     "name": "estado_contralor"
   },
 
   "alta": {
-    "type": "timestamp",
     "field_type": "nf",
     "default": "current_timestamp()",
     "alias": "alt",
     "entity_name": "toma",
-    "data_type": "timestamp",  
+    "type": "datetime",  
     "name": "alta"
   },
 
   "curso": {
-    "type": "varchar",
     "field_type": "mo",
     "default": null,
     "alias": "cur",
     "entity_name": "toma",
     "entity_ref_name": "curso",  
-    "data_type": "string",  
+    "type": "str",  
     "length": 45,
     "name": "curso"
   },
 
   "docente": {
-    "type": "varchar",
     "field_type": "mo",
     "default": null,
     "alias": "doc",
     "entity_name": "toma",
     "entity_ref_name": "persona",  
-    "data_type": "string",  
+    "type": "str",  
     "length": 45,
     "name": "docente"
   },
 
   "reemplazo": {
-    "type": "varchar",
     "field_type": "mo",
     "default": null,
     "alias": "ree",
     "entity_name": "toma",
     "entity_ref_name": "persona",  
-    "data_type": "string",  
+    "type": "str",  
     "length": 45,
     "name": "reemplazo"
   },
 
   "planilla_docente": {
-    "type": "varchar",
     "field_type": "mo",
     "default": null,
     "alias": "pd",
     "entity_name": "toma",
     "entity_ref_name": "planilla_docente",  
-    "data_type": "string",  
+    "type": "str",  
     "length": 45,
     "name": "planilla_docente"
   },
 
   "calificacion": {
-    "type": "tinyint",
     "field_type": "nf",
     "default": "0",
     "alias": "cal",
     "entity_name": "toma",
-    "data_type": "boolean",  
+    "type": "bool",  
     "length": 1,
     "name": "calificacion"
   },
 
   "temas_tratados": {
-    "type": "tinyint",
     "field_type": "nf",
     "default": "0",
     "alias": "tt",
     "entity_name": "toma",
-    "data_type": "boolean",  
+    "type": "bool",  
     "length": 1,
     "name": "temas_tratados"
   },
 
   "asistencia": {
-    "type": "tinyint",
     "field_type": "nf",
     "default": "0",
     "alias": "asi",
     "entity_name": "toma",
-    "data_type": "boolean",  
+    "type": "bool",  
     "length": 1,
     "name": "asistencia"
   },
 
   "sin_planillas": {
-    "type": "tinyint",
     "field_type": "nf",
     "default": "0",
     "alias": "sp",
     "entity_name": "toma",
-    "data_type": "boolean",  
+    "type": "bool",  
     "length": 1,
     "name": "sin_planillas"
   }

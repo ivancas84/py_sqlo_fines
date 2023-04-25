@@ -1,76 +1,69 @@
 {
   "id": {
-    "type": "varchar",
     "field_type": "pk",
     "default": null,
     "alias": "id",
     "entity_name": "telefono",
-    "data_type": "string",  
+    "type": "str",  
     "length": 45,
     "name": "id"
   },
 
   "tipo": {
-    "type": "varchar",
     "field_type": "nf",
     "default": null,
     "alias": "tip",
     "entity_name": "telefono",
-    "data_type": "string",  
+    "type": "str",  
     "length": 45,
     "name": "tipo"
   },
 
   "prefijo": {
-    "type": "varchar",
     "field_type": "nf",
     "default": null,
     "alias": "pre",
     "entity_name": "telefono",
-    "data_type": "string",  
+    "type": "str",  
     "length": 45,
     "name": "prefijo"
   },
 
   "numero": {
-    "type": "varchar",
     "field_type": "nf",
     "default": null,
     "alias": "num",
     "entity_name": "telefono",
-    "data_type": "string",  
+    "type": "str",  
     "length": 255,
     "name": "numero"
   },
 
   "insertado": {
-    "type": "timestamp",
     "field_type": "nf",
     "default": "current_timestamp()",
     "alias": "ins",
     "entity_name": "telefono",
-    "data_type": "timestamp",  
+    "type": "datetime",  
     "name": "insertado"
   },
 
   "eliminado": {
-    "type": "timestamp",
     "field_type": "nf",
     "default": null,
     "alias": "eli",
     "entity_name": "telefono",
-    "data_type": "timestamp",  
+    "type": "datetime",  
     "name": "eliminado"
   },
 
   "persona": {
-    "type": "varchar",
     "field_type": "mo",
     "default": null,
     "alias": "per",
     "entity_name": "telefono",
     "entity_ref_name": "persona",  
-    "data_type": "string",  
+    "type": "str",  
     "length": 45,
     "name": "persona"
   }

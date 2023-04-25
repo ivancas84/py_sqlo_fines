@@ -1,186 +1,169 @@
 {
   "id": {
-    "type": "varchar",
     "field_type": "pk",
     "default": null,
     "alias": "id",
     "entity_name": "persona",
-    "data_type": "string",  
+    "type": "str",  
     "length": 45,
     "name": "id"
   },
 
   "nombres": {
-    "type": "varchar",
     "field_type": "nf",
     "default": null,
     "alias": "nom",
     "entity_name": "persona",
-    "data_type": "string",  
+    "type": "str",  
     "length": 255,
     "name": "nombres"
   },
 
   "apellidos": {
-    "type": "varchar",
     "field_type": "nf",
     "default": null,
     "alias": "ape",
     "entity_name": "persona",
-    "data_type": "string",  
+    "type": "str",  
     "length": 255,
     "name": "apellidos"
   },
 
   "fecha_nacimiento": {
-    "type": "date",
     "field_type": "nf",
     "default": null,
     "alias": "fn",
     "entity_name": "persona",
-    "data_type": "date",  
+    "type": "date",  
     "name": "fecha_nacimiento"
   },
 
   "numero_documento": {
-    "type": "varchar",
     "field_type": "nf",
     "default": null,
     "alias": "nd",
     "entity_name": "persona",
-    "data_type": "string",  
+    "type": "str",  
     "length": 45,
     "name": "numero_documento"
   },
 
   "cuil": {
-    "type": "varchar",
     "field_type": "nf",
     "default": null,
     "alias": "cui",
     "entity_name": "persona",
-    "data_type": "string",  
+    "type": "str",  
     "length": 45,
     "name": "cuil"
   },
 
   "genero": {
-    "type": "varchar",
     "field_type": "nf",
     "default": null,
     "alias": "gen",
     "entity_name": "persona",
-    "data_type": "string",  
+    "type": "str",  
     "length": 45,
     "name": "genero"
   },
 
   "apodo": {
-    "type": "varchar",
     "field_type": "nf",
     "default": null,
     "alias": "apo",
     "entity_name": "persona",
-    "data_type": "string",  
+    "type": "str",  
     "length": 255,
     "name": "apodo"
   },
 
   "telefono": {
-    "type": "varchar",
     "field_type": "nf",
     "default": null,
     "alias": "tel",
     "entity_name": "persona",
-    "data_type": "string",  
+    "type": "str",  
     "length": 255,
     "name": "telefono"
   },
 
   "email": {
-    "type": "varchar",
     "field_type": "nf",
     "default": null,
     "alias": "ema",
     "entity_name": "persona",
-    "data_type": "string",  
+    "type": "str",  
     "length": 255,
     "name": "email"
   },
 
   "email_abc": {
-    "type": "varchar",
     "field_type": "nf",
     "default": null,
     "alias": "ea",
     "entity_name": "persona",
-    "data_type": "string",  
+    "type": "str",  
     "length": 255,
     "name": "email_abc"
   },
 
   "alta": {
-    "type": "timestamp",
     "field_type": "nf",
     "default": "current_timestamp()",
     "alias": "alt",
     "entity_name": "persona",
-    "data_type": "timestamp",  
+    "type": "datetime",  
     "name": "alta"
   },
 
   "domicilio": {
-    "type": "varchar",
     "field_type": "mo",
     "default": null,
     "alias": "dom",
     "entity_name": "persona",
     "entity_ref_name": "domicilio",  
-    "data_type": "string",  
+    "type": "str",  
     "length": 45,
     "name": "domicilio"
   },
 
   "lugar_nacimiento": {
-    "type": "varchar",
     "field_type": "nf",
     "default": null,
     "alias": "ln",
     "entity_name": "persona",
-    "data_type": "string",  
+    "type": "str",  
     "length": 255,
     "name": "lugar_nacimiento"
   },
 
   "telefono_verificado": {
-    "type": "tinyint",
     "field_type": "nf",
     "default": "0",
     "alias": "tv",
     "entity_name": "persona",
-    "data_type": "boolean",  
+    "type": "bool",  
     "length": 1,
     "name": "telefono_verificado"
   },
 
   "email_verificado": {
-    "type": "tinyint",
     "field_type": "nf",
     "default": "0",
     "alias": "ev",
     "entity_name": "persona",
-    "data_type": "boolean",  
+    "type": "bool",  
     "length": 1,
     "name": "email_verificado"
   },
 
   "info_verificada": {
-    "type": "tinyint",
     "field_type": "nf",
     "default": "0",
     "alias": "iv",
     "entity_name": "persona",
-    "data_type": "boolean",  
+    "type": "bool",  
     "length": 1,
     "name": "info_verificada"
   }

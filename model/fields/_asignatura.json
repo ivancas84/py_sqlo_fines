@@ -1,66 +1,60 @@
 {
   "id": {
-    "type": "varchar",
     "field_type": "pk",
     "default": null,
     "alias": "id",
     "entity_name": "asignatura",
-    "data_type": "string",  
+    "type": "str",  
     "length": 45,
     "name": "id"
   },
 
   "nombre": {
-    "type": "varchar",
     "field_type": "nf",
     "default": null,
     "alias": "nom",
     "entity_name": "asignatura",
-    "data_type": "string",  
+    "type": "str",  
     "length": 255,
     "name": "nombre"
   },
 
   "formacion": {
-    "type": "varchar",
     "field_type": "nf",
     "default": null,
     "alias": "for",
     "entity_name": "asignatura",
-    "data_type": "string",  
+    "type": "str",  
     "length": 45,
     "name": "formacion"
   },
 
   "clasificacion": {
-    "type": "varchar",
     "field_type": "nf",
     "default": null,
     "alias": "cla",
     "entity_name": "asignatura",
-    "data_type": "string",  
+    "type": "str",  
     "length": 45,
     "name": "clasificacion"
   },
 
   "codigo": {
-    "type": "varchar",
     "field_type": "nf",
     "default": null,
     "alias": "cod",
     "entity_name": "asignatura",
-    "data_type": "string",  
+    "type": "str",  
     "length": 45,
     "name": "codigo"
   },
 
   "perfil": {
-    "type": "varchar",
     "field_type": "nf",
     "default": null,
     "alias": "per",
     "entity_name": "asignatura",
-    "data_type": "string",  
+    "type": "str",  
     "length": 45,
     "name": "perfil"
   }

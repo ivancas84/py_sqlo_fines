@@ -1,56 +1,51 @@
 {
   "id": {
-    "type": "varchar",
     "field_type": "pk",
     "default": null,
     "alias": "id",
     "entity_name": "centro_educativo",
-    "data_type": "string",  
+    "type": "str",  
     "length": 45,
     "name": "id"
   },
 
   "nombre": {
-    "type": "varchar",
     "field_type": "nf",
     "default": null,
     "alias": "nom",
     "entity_name": "centro_educativo",
-    "data_type": "string",  
+    "type": "str",  
     "length": 255,
     "name": "nombre"
   },
 
   "cue": {
-    "type": "varchar",
     "field_type": "nf",
     "default": null,
     "alias": "cue",
     "entity_name": "centro_educativo",
-    "data_type": "string",  
+    "type": "str",  
     "length": 45,
     "name": "cue"
   },
 
   "domicilio": {
-    "type": "varchar",
     "field_type": "mo",
     "default": null,
     "alias": "dom",
     "entity_name": "centro_educativo",
     "entity_ref_name": "domicilio",  
-    "data_type": "string",  
+    "type": "str",  
     "length": 45,
     "name": "domicilio"
   },
 
   "observaciones": {
-    "type": "text",
     "field_type": "nf",
     "default": null,
     "alias": "obs",
     "entity_name": "centro_educativo",
-    "data_type": "text",  
+    "type": "str",  
     "length": 65535,
     "name": "observaciones"
   }

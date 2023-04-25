@@ -1,298 +1,271 @@
 {
   "id": {
-    "type": "varchar",
     "field_type": "pk",
     "default": null,
     "alias": "id",
     "entity_name": "alumno",
-    "data_type": "string",  
+    "type": "str",  
     "length": 45,
     "name": "id"
   },
 
   "anio_ingreso": {
-    "type": "varchar",
     "field_type": "nf",
     "default": null,
     "alias": "ai",
     "entity_name": "alumno",
-    "data_type": "string",  
+    "type": "str",  
     "length": 45,
     "name": "anio_ingreso"
   },
 
   "observaciones": {
-    "type": "text",
     "field_type": "nf",
     "default": null,
     "alias": "obs",
     "entity_name": "alumno",
-    "data_type": "text",  
+    "type": "str",  
     "length": 65535,
     "name": "observaciones"
   },
 
   "persona": {
-    "type": "varchar",
     "field_type": "oo",
     "default": null,
     "alias": "per",
     "entity_name": "alumno",
     "entity_ref_name": "persona",  
-    "data_type": "string",  
+    "type": "str",  
     "length": 45,
     "name": "persona"
   },
 
   "estado_inscripcion": {
-    "type": "varchar",
     "field_type": "nf",
     "default": null,
     "alias": "ei",
     "entity_name": "alumno",
-    "data_type": "string",  
+    "type": "str",  
     "length": 45,
     "name": "estado_inscripcion"
   },
 
   "fecha_titulacion": {
-    "type": "date",
     "field_type": "nf",
     "default": null,
     "alias": "ft",
     "entity_name": "alumno",
-    "data_type": "date",  
+    "type": "date",  
     "name": "fecha_titulacion"
   },
 
   "plan": {
-    "type": "varchar",
     "field_type": "mo",
     "default": null,
     "alias": "pla",
     "entity_name": "alumno",
     "entity_ref_name": "plan",  
-    "data_type": "string",  
+    "type": "str",  
     "length": 45,
     "name": "plan"
   },
 
   "resolucion_inscripcion": {
-    "type": "varchar",
     "field_type": "mo",
     "default": null,
     "alias": "ri",
     "entity_name": "alumno",
     "entity_ref_name": "resolucion",  
-    "data_type": "string",  
+    "type": "str",  
     "length": 45,
     "name": "resolucion_inscripcion"
   },
 
   "anio_inscripcion": {
-    "type": "smallint",
     "field_type": "nf",
     "default": null,
     "alias": "aia",
     "entity_name": "alumno",
-    "data_type": "integer",  
+    "type": "int",  
     "length": 1,
     "name": "anio_inscripcion"
   },
 
   "semestre_inscripcion": {
-    "type": "smallint",
     "field_type": "nf",
     "default": null,
     "alias": "si",
     "entity_name": "alumno",
-    "data_type": "integer",  
+    "type": "int",  
     "length": 1,
     "name": "semestre_inscripcion"
   },
 
   "semestre_ingreso": {
-    "type": "smallint",
     "field_type": "nf",
     "default": null,
     "alias": "sia",
     "entity_name": "alumno",
-    "data_type": "integer",  
+    "type": "int",  
     "length": 1,
     "name": "semestre_ingreso"
   },
 
   "adeuda_legajo": {
-    "type": "varchar",
     "field_type": "nf",
     "default": null,
     "alias": "al",
     "entity_name": "alumno",
-    "data_type": "string",  
+    "type": "str",  
     "length": 255,
     "name": "adeuda_legajo"
   },
 
   "adeuda_deudores": {
-    "type": "varchar",
     "field_type": "nf",
     "default": null,
     "alias": "ad",
     "entity_name": "alumno",
-    "data_type": "string",  
+    "type": "str",  
     "length": 255,
     "name": "adeuda_deudores"
   },
 
   "documentacion_inscripcion": {
-    "type": "varchar",
     "field_type": "nf",
     "default": null,
     "alias": "di",
     "entity_name": "alumno",
-    "data_type": "string",  
+    "type": "str",  
     "length": 255,
     "name": "documentacion_inscripcion"
   },
 
   "anio_inscripcion_completo": {
-    "type": "tinyint",
     "field_type": "nf",
     "default": null,
     "alias": "aic",
     "entity_name": "alumno",
-    "data_type": "boolean",  
+    "type": "bool",  
     "length": 1,
     "name": "anio_inscripcion_completo"
   },
 
   "establecimiento_inscripcion": {
-    "type": "varchar",
     "field_type": "nf",
     "default": null,
     "alias": "eia",
     "entity_name": "alumno",
-    "data_type": "string",  
+    "type": "str",  
     "length": 255,
     "name": "establecimiento_inscripcion"
   },
 
   "libro_folio": {
-    "type": "varchar",
     "field_type": "nf",
     "default": null,
     "alias": "lf",
     "entity_name": "alumno",
-    "data_type": "string",  
+    "type": "str",  
     "length": 255,
     "name": "libro_folio"
   },
 
   "libro": {
-    "type": "varchar",
     "field_type": "nf",
     "default": null,
     "alias": "lib",
     "entity_name": "alumno",
-    "data_type": "string",  
+    "type": "str",  
     "length": 45,
     "name": "libro"
   },
 
   "folio": {
-    "type": "varchar",
     "field_type": "nf",
     "default": null,
     "alias": "fol",
     "entity_name": "alumno",
-    "data_type": "string",  
+    "type": "str",  
     "length": 45,
     "name": "folio"
   },
 
   "comentarios": {
-    "type": "text",
     "field_type": "nf",
     "default": null,
     "alias": "com",
     "entity_name": "alumno",
-    "data_type": "text",  
+    "type": "str",  
     "length": 65535,
     "name": "comentarios"
   },
 
   "tiene_dni": {
-    "type": "tinyint",
     "field_type": "nf",
     "default": "0",
     "alias": "td",
     "entity_name": "alumno",
-    "data_type": "boolean",  
+    "type": "bool",  
     "length": 1,
     "name": "tiene_dni"
   },
 
   "tiene_constancia": {
-    "type": "tinyint",
     "field_type": "nf",
     "default": "0",
     "alias": "tc",
     "entity_name": "alumno",
-    "data_type": "boolean",  
+    "type": "bool",  
     "length": 1,
     "name": "tiene_constancia"
   },
 
   "tiene_certificado": {
-    "type": "tinyint",
     "field_type": "nf",
     "default": "0",
     "alias": "tca",
     "entity_name": "alumno",
-    "data_type": "boolean",  
+    "type": "bool",  
     "length": 1,
     "name": "tiene_certificado"
   },
 
   "previas_completas": {
-    "type": "tinyint",
     "field_type": "nf",
     "default": "0",
     "alias": "pc",
     "entity_name": "alumno",
-    "data_type": "boolean",  
+    "type": "bool",  
     "length": 1,
     "name": "previas_completas"
   },
 
   "tiene_partida": {
-    "type": "tinyint",
     "field_type": "nf",
     "default": "0",
     "alias": "tp",
     "entity_name": "alumno",
-    "data_type": "boolean",  
+    "type": "bool",  
     "length": 1,
     "name": "tiene_partida"
   },
 
   "creado": {
-    "type": "timestamp",
     "field_type": "nf",
     "default": "current_timestamp()",
     "alias": "cre",
     "entity_name": "alumno",
-    "data_type": "timestamp",  
+    "type": "datetime",  
     "name": "creado"
   },
 
   "confirmado_direccion": {
-    "type": "tinyint",
     "field_type": "nf",
     "default": "0",
     "alias": "cd",
     "entity_name": "alumno",
-    "data_type": "boolean",  
+    "type": "bool",  
     "length": 1,
     "name": "confirmado_direccion"
   }
