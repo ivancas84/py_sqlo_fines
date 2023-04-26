@@ -1,11 +1,10 @@
-import pprint
-from pydoc import resolve
 import sys
+
 sys.path.insert(0, "../")
 
 from py_sqlo.src.db import Db
-from py_sqlo.src.config import APPROX, EQUAL, NONEQUAL
-from py_sqlo.src.function.to_bool import to_bool
+
+from  py_sqlo.src._mysql.options import EQUAL
 
 
 config = {
@@ -13,14 +12,15 @@ config = {
     "password":"",
     "host":"localhost",
     "database":"planfi10_20203",
-    "path_model":"C:\\xampp\\htdocs\\fines2-estructura\\model\\"
+    "path_model":"C:\\xampp\\htdocs\\fines2-estructura\\model\\",
+    "driver":"mysql"
 }
 
 db = Db(config)
 q = db.query("persona").cond(
-    ("nombres",EQUAL,("Ivan", "Juan"))
+    ("nombres","EQUAL",("Ivan", "Juan"))
 ).sql()
-print(q)
+# print(q)
 # cursor = db.conn().cursor()
 
 # sql = "SELECT tiene_constancia FROM alumno WHERE tiene_constancia = true LIMIT 1 "
