@@ -18,7 +18,7 @@ config = {
 
 db = Db(config)
 q = db.query("persona").cond(
-    ("nombres",EQUAL,("Ivan", "Juan"))
+    ("nombres","EQUAL",("Ivan", "Juan"))
 ).sql()
 print(q)
 # cursor = db.conn().cursor()
