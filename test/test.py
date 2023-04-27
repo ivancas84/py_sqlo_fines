@@ -4,8 +4,6 @@ sys.path.insert(0, "../")
 
 from py_sqlo.src.db import Db
 
-from  py_sqlo.src._mysql.options import EQUAL
-
 
 config = {
     "user":"root",
@@ -17,9 +15,10 @@ config = {
 }
 
 db = Db(config)
-q = db.query("persona").cond(
-    ("nombres","EQUAL",("Ivan", "Juan"))
-).sql()
+q = db.query("persona").cond((
+    ("domicilio-calle","EQUAL",True),
+    ("domicilio-numero","EQUAL",94)
+)).sql()
 # print(q)
 # cursor = db.conn().cursor()
 
