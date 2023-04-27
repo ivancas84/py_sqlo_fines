@@ -1,24 +1,35 @@
 import sys
+import datetime
+from dateutil.parser import parse
 
 sys.path.insert(0, "../")
 
-from py_sqlo.src.db import Db
+# from py_sqlo.src.db import Db
 
 
-config = {
-    "user":"root",
-    "password":"",
-    "host":"localhost",
-    "database":"planfi10_20203",
-    "path_model":"C:\\xampp\\htdocs\\fines2-estructura\\model\\",
-    "driver":"mysql"
-}
+# config = {
+#     "user":"root",
+#     "password":"",
+#     "host":"localhost",
+#     "database":"planfi10_20203",
+#     "path_model":"C:\\xampp\\htdocs\\py_sqlo_fines\\model\\",
+#     "driver":"mysql"
+# }
+d = parse("2015-02-24")
+dd = d.date()
+print(type(dd))
+print(dd)
 
-db = Db(config)
-q = db.query("persona").cond((
-    ("domicilio-calle","EQUAL",True),
-    ("domicilio-numero","EQUAL",94)
-)).sql()
+d = datetime.datetime.strptime("2012-04-23", '%Y-%m-%d')
+
+
+
+
+
+# db = Db(config)
+# q = db.query("persona").cond((
+#     ("persona-fecha_nacimiento","EQUAL","2021"),
+# )).sql()
 # print(q)
 # cursor = db.conn().cursor()
 
